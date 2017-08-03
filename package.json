@@ -31,7 +31,10 @@
     "express": "^4.15.3",
     "parse-tweet": "^1.0.0",
     "rxjs": "^5.4.1",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "engines": {
+    "node": "6.10.3"
+  }
   },
   "devDependencies": {
     "@angular/cli": "1.2.6",
