@@ -9,13 +9,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
-    "engines": {
-    "node": "6.10.3"
-  }
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.2.6",
+    "@angular/compiler-cli": "^4.0.0",
     "@angular/animations": "^4.0.0",
     "@angular/cli": "1.2.6",
     "@angular/common": "^4.0.0",
@@ -31,10 +30,7 @@
     "express": "^4.15.3",
     "parse-tweet": "^1.0.0",
     "rxjs": "^5.4.1",
-    "zone.js": "^0.8.14",
-    "engines": {
-    "node": "6.10.3"
-  }
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.2.6",
