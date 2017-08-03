@@ -13,7 +13,7 @@ import { TweetsService } from '../tweets.service';
     constructor(private service: TweetsService) { }
 
     ngOnInit() {
-    const query = localStorage.getItem("lastQuery") || "Angular";
+    const query = localStorage.getItem("lastQuery") || "Ruby";
     this.service.getTweets(query).subscribe( (tweets) => {
           this.tweets = tweets.statuses;
       });

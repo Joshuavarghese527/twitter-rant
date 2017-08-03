@@ -12,12 +12,13 @@ import { TweetsService } from './tweets.service';
 import { TweetListComponent } from './tweet-list/tweet-list.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { HashtagComponent } from './hashtag/hashtag.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainPageComponent },
-  { path: 'about', component: AboutPageComponent }
+  { path: 'about', component: AboutPageComponent },
+  { path: 'hashtag/:hashtag', component: HashtagComponent }
 ];
-
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     MainPageComponent,
     TweetListComponent,
     TweetComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    HashtagComponent
   ],
   imports: [
     BrowserModule,
