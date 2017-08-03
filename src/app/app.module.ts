@@ -9,6 +9,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { TweetsService } from './tweets.service';
+import { TweetListComponent } from './tweet-list/tweet-list.component';
+import { TweetComponent } from './tweet/tweet.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainPageComponent },
@@ -20,13 +23,16 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     AboutPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    TweetListComponent,
+    TweetComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule, RouterModule.forRoot(appRoutes)
   ],
-  providers: [ TweetsService ],
+   providers: [ TweetsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
